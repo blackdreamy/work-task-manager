@@ -1,0 +1,407 @@
+html {
+	background-color:#e6e7e8;
+}	
+ :root{
+	--main-bg-color:#f6f6f6;
+	--grey:#e9e9e9;
+}
+body{
+	height:93.1%;
+	width:100%;
+	position: absolute;
+	font-family: "Open Sans",sans-serif;
+}
+.header{
+	height:64px;
+	background-color:#90a3ae;
+	width:100%;
+}
+#brandname{
+	color:#ffffff;
+	font-size:30px;
+}
+.icons{
+	color:white;
+	font-size:23px;
+	margin-right:20px;
+}
+.fas{
+	margin-right:15px;
+}
+
+#usericon, #passwordicon, #logouticon {
+	cursor:pointer;
+}
+#logouticon:hover{
+	color:#FA8072;
+}
+#usericon:hover, #passwordicon:hover{
+	color:#cccccc;
+}
+#maincontainer {
+	background-color:var(--main-bg-color);
+}
+#headerpart {
+	height:50px;
+	border-bottom:1px solid #4A8AA6;
+}
+#maincontainer{
+	background-color:#e6e7e8;
+	min-height:100%;
+}
+#leftdiv{
+	max-width:224px;
+	width:225px;
+	padding:0px;
+
+}
+.btn-primary{
+	background-color:#6cbe67;
+	border-color:#6cbe67;
+}
+.btn{
+	display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 8px 12px;
+    font-size: 13px;
+    line-height: 1.4;
+    border-radius: 3px;
+    user-select: none;
+	height:34px;
+	width:176px;
+}
+#addbutton{
+	margin-top:20px;
+	margin-left:25px;
+}
+#addbutton:hover{
+	background-color:#61ab5c;
+	border-color:#61ab5c;
+}
+.fa-plus{
+	margin-left:-15px;
+}
+#addtext{
+	padding-left:5px;
+	font-weight:bold;
+}
+ul{
+	margin-top:35px;
+}
+li{
+	margin-top:10px;
+	border-bottom: 1px solid #ddd;
+	padding-left:32px;
+	width:100%;
+	padding-top:0px;
+	padding-bottom:11px;
+	font-weight:450;
+	font-size:15px;
+}
+li a {
+	color:#414042;
+}
+li a:hover {
+	color:#61ab5c;
+	text-decoration:none;
+}
+.sidebar-icon-wrapper{
+	margin-right:15px;
+}
+input {
+	margin-top:5px;
+	height:45px;
+}
+#add{
+	margin-top:10px;
+}
+#addtask{
+	height:700px;
+}
+#taskstable{
+	width:100%;
+	margin: 30px auto;
+	border-collapse:collapse;
+	table-layout:fixed;
+	word-break: break-all;
+}
+
+#taskstable tr {
+	border-bottom:1px solid black;
+}
+
+#taskstable th{
+	font-size:13px;
+	color:black;
+}
+#taskstable th,td{
+	border:none;
+	height:40px;
+	padding:2px;
+}
+#taskstable td {
+	border-left:1px solid black;
+	font-size:13px;
+}
+#taskstable td:last-child{
+	border-right:1px solid black;
+}
+#taskstable td.task {
+	width:300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	max-width:300px;
+}
+#taskstable tr:hover{
+	filter: brightness(85%);
+}
+.task {
+	text-align:left;
+}
+.delete {
+	text-align:center;
+	width:10px;
+}
+.delete {
+	color:white;
+	background:#a52a2a;
+	padding:1px 6px;
+	border-radius:3px;
+	text-decoration:none;
+}
+
+.deleted {
+	border-right: 5px solid red;
+	border-left: 5px solid red;
+}
+#taskadd{
+	height:700px !important;
+}
+#modalbodyadd{
+	height:700px;
+}
+
+.tdspan1 {
+	width:100%;
+	max-width:100%;
+	max-height:70px;
+	height:70px;
+	overflow:hidden;
+	word-wrap:break-word;
+	display: inline-block;
+	text-align:left;
+	padding-right:5px;
+	padding-top:10px;
+	word-break:normal;
+	overflow-wrap: break-word;
+	white-space: pre-line;
+
+}
+.tdspan2 {
+	width:100%;
+	max-width:100%;
+	max-height:70px;
+	height:70px;
+	overflow:hidden;
+	word-wrap:break-word;
+	display: inline-block;
+	text-align:left;
+	padding-right:5px;
+	padding-top:10px;
+	word-break:normal;
+	overflow-wrap: break-word;
+	white-space: pre-line;
+
+}
+
+#reason{
+	width:110px;
+	max-width:110px;
+	overflow-wrap: break-word;
+}
+
+#type{
+	width:110px;
+	max-width:110px;
+	overflow-wrap: break-word;
+}
+
+#place{
+	width:110px;
+	max-width:110px;
+	overflow-wrap: break-word;
+}
+
+#adress{
+	width:220px;
+	max-width:220px;
+	overflow-wrap: break-word;
+}
+
+#commentary {
+	width:220px;
+	max-width:220px;
+	overflow-wrap: break-word;
+}
+
+#status {
+		width:100px;
+		max-width:100px;
+		overflow-wrap: break-word;
+}
+#date{
+	width:150px;
+	overflow-wrap: break-word;
+	max-width:1500px;
+}
+#phone {
+	width:70px;
+	overflow-wrap: break-word;
+}
+#workername {
+	width:80px;
+}
+#timefinish {
+	width:120px;
+	overflow-wrap:break-word;
+}
+#timestart{
+	width:120px;
+	
+}
+#tasksdiv{
+	margin-top:20px;
+	padding-left:30px;
+	padding-right:30px;
+	width:100%;
+}
+
+#del {
+	width:40px;
+}
+#edit {
+	width: 80px;
+}
+.editbutton {
+	width:60px;
+	height:40px;
+	font-size:18px;
+	padding:0px;
+}
+#closebutton{
+	border: 1px solid #ccc;
+}
+#modalinfo {
+	word-wrap: break-word;
+	table-layout: fixed
+}
+#insert {
+	width:100%;
+}
+#insert_form label {
+	font-size:16px;
+	font-weight:bold;
+}
+#add_button {
+	margin-top:25px;
+	margin-left:30px;
+}
+#taskstable_length{
+	font-size:15px;
+}
+#taskstable_filter > label > input[type="search"]{
+	height:40px;
+}
+
+
+
+#description {
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+      }
+
+      #infowindow-content .title {
+        font-weight: bold;
+      }
+
+      #infowindow-content {
+        display: none;
+      }
+
+      #map #infowindow-content {
+        display: inline;
+      }
+
+      .pac-card {
+        margin: 10px 10px 0 0;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+        font-family: Roboto;
+		
+      }
+
+     .pac-container {
+		background-color: #FFF;
+		z-index: 20;
+		position: fixed;
+		display: inline-block;
+		float: left;
+}
+
+      .pac-controls {
+        display: inline-block;
+        padding: 5px 11px;
+      }
+
+      .pac-controls label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+
+      #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 400px;
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+
+      #title {
+        color: #fff;
+        background-color: #4d90fe;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 6px 12px;
+      }
+      #target {
+        width: 345px;
+      }
+	  
+	  .modal{
+		z-index: 20;   
+	}
+	.modal-backdrop{
+		z-index: 10;        
+	}​
